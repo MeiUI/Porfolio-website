@@ -36,6 +36,12 @@ h4 {
 img {
   width: 50%;
 }
+.logo {
+  width: 5%;
+}
+.vintagen.homepage {
+  width: 20%;
+}
 a:visited { /* visited link */
   color: #ff7f50;
 }
@@ -65,12 +71,12 @@ a:focus {
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+.button:active { /* selected link */
+  color: #994c30;
+}
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-}
-.button:active { /* selected link */
-  color: #994c30;
 }
 .button.contact {
   background-color: transparent;
