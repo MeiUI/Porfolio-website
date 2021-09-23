@@ -3,6 +3,11 @@ Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
+header {
+  background-color: #ff44c4;
+  padding: 10px;
+  margin: 10px;
+}
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
