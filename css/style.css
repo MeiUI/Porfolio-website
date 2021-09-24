@@ -4,9 +4,20 @@ Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
 header {
-  background-color: #ff44c4;
-  padding: 10px;
-  margin: 10px;
+  background-color: #e6e6fa;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 3px solid #4a4a4a;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+position: fixed;
+display: inline-block;
+width: 100%;
+}
+* {
+  box-sizing: border-box;
 }
 body {
   background-color: #ffffff;
@@ -16,7 +27,6 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -42,7 +52,7 @@ img {
   width: 50%;
 }
 .logo {
-  width: 5%;
+  max-width: 70px;
 }
 .vintagen.homepage {
   width: 20%;
@@ -95,4 +105,40 @@ a:focus {
 }
 .button.contact:active { /* selected link */
   color: #994c30;
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav {
+  width: 100%;
+}
+#hero {
+  background-color: #ffe4c4;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
