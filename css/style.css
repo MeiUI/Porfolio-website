@@ -37,6 +37,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text-align: center;
 }
 h3 {
   font-size: 1.75em;
@@ -47,9 +48,20 @@ h4 {
   font-weight: 400;
 }
 img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+.project.image{
   width: 100%;
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
+}
+.profile.image{
+  width: 25%;
+}
+.icon{
+  width: 5%;
 }
 .logo {
   max-width: 70px;
