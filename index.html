@@ -7,22 +7,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--download the latest minimized link from code.jquery.com -->
+  <script src="js/scripts.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
   <meta name="author" content="YourName">
   <meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
+  <script src="https://kit.fontawesome.com/f891542fe8.js" crossorigin="anonymous"></script> <!--setup fontawesome account to get the kit code -->
   <title>About Christine Chang UI/UX Designer</title>
 </head>
 
 <body>
   <header>
   <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
     <a href="index.html"> <img src="img/PersonasDesign_logo.png" class="logo" alt="Logo"</a>
     <nav>
       <ul class="navigation">
         <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
   </div>
@@ -1047,7 +1052,7 @@
 </div>
 </div>
         </main>
-      <footer id="contact">
+      <footer id="contact" onclick="menuToggle()">
   <div class="container">
     <h2>Get in Touch</h2>
     <p>

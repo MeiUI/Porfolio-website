@@ -5,8 +5,7 @@ Secondary Color (Green): #489c79;
 */
 header {
   background-color: #e6e6fa;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   margin: 0;
   border-bottom: 3px solid #4a4a4a;
   -webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -130,9 +129,7 @@ a:focus {
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -140,8 +137,32 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
-nav {
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 #hero {
   background-color: #ffe4c4;
@@ -153,7 +174,7 @@ nav {
   width: 100%;
 }
 main {
-  padding-top: 99px;
+  padding-top: 56px;
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -163,12 +184,23 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
   .col-md-6 {
   width: 50%;
   }
