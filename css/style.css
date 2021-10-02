@@ -32,6 +32,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 h2 {
   font-size: 2.25em;
@@ -57,7 +58,7 @@ img {
   height: auto;
 }
 .profile.image{
-  width: 25%;
+  width: 100%;
 }
 .icon{
   width: 5%;
@@ -66,7 +67,7 @@ img {
   max-width: 70px;
 }
 .vintagen.homepage {
-  width: 20%;
+  width: 80%;
 }
 a:active { /* selected link */
   color: #994c30;

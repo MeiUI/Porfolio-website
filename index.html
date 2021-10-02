@@ -10,12 +10,13 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--download the latest minimized link from code.jquery.com -->
   <script src="js/scripts.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset="utf-8">
   <meta name="author" content="YourName">
   <meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
   <script src="https://kit.fontawesome.com/f891542fe8.js" crossorigin="anonymous"></script> <!--setup fontawesome account to get the kit code -->
   <title>About Christine Chang UI/UX Designer</title>
 </head>
+
 
 <body>
   <header>
@@ -31,6 +32,7 @@
       </ul>
     </nav>
   </div>
+</div>
 </header>
 <main>
   <div id="hero">
@@ -41,22 +43,16 @@
     </div>
   </div>
   <div id="work">    <!-- open section for project -->
-    <div class="container">      <!-- open 1st part of the section for project -->
       <h2>My Projects</h2>
-    </div><!-- end 1st part of the section for project -->
-    <div id="work">      <!-- open row that holds (2) columns for project -->
-      <div class="container">        <!-- open first column (used for image) -->
-<div class="row">
-<div class="column col-md-6 col-lg-6">
+    <div class="container">        <!-- open first column (used for image) -->
+     <div class="row">
+      <div class="column col-md-6 col-lg-6">
         <picture>
-          <source srcset="img/Vintagen/Home Page.png" media="(max-width:767px)">
-          <img src="img/Vintagen/Home Page.png" alt="App Image">
+          <source srcset="img/Vintagen/Home_Page.png" media="(max-width:767px)">
+          <img src="img/Vintagen/Home_Page.png" alt="App Image">
         </picture>
       </div><!-- end first column -->
-      <div class="container">
-        <!-- open second column (used for text) -->
-        <div class="row">
-          <div class="column col-md-6 col-lg-6">
+      <div class="column col-md-6 col-lg-6">
         <h3>Vintagen (Vintage Clothing Apps)</h3><!-- heading for the project -->
         <p>
           <!-- open 1st paragraph -->
@@ -73,17 +69,16 @@
         <a href="Vintagen.html" class="button">View Project</a>
       </div><!-- end second column -->
     </div>
-      <div class="container">         <!-- open first column (used for image) -->
+  </div>
+  <div class="container">
+    <div class="row">         <!-- open first column (used for image) -->
       <div class="column col-md-6 col-lg-6">
           <picture>
           <source srcset="img/Moneysavingapp/Moneysaving_Goal.png" media="(max-width:767px)">
           <img src="img/Moneysavingapp/Moneysaving_Goal.png" alt="App Image">
         </picture>
       </div><!-- end first column -->
-      <div class="container">
-        <!-- open second column (used for text) -->
-        <div class="row">
-          <div class="column col-md-6 col-lg-6">
+      <div class="column col-md-6 col-lg-6">
         <h3> Salvare (Money-saving apps)</h3> <!-- heading for the project 2 -->
         <p>
           <!-- open 1st paragraph -->
@@ -99,11 +94,12 @@
           TOOLS: Figma, Vidyard, Powerpoint
         </p><!-- end 3rd paragraph -->
         <a href="http://www.personasdesign.com/money-savingapp/" class="button">View Project</a><!-- button or link label -->
-</div>
-</div>
-<div>
-  <div class="container"
-  <div class=row>
+       </div>
+    </div>
+  </div>
+</div><!-- end work id -->
+  <div class="container">
+    <div class="row">
     <picture>
       <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="505" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -1039,18 +1035,13 @@
         </g>
     </svg>
 </picture>
-</div><!-- end first column -->
-<div class="container">
-<!-- open second column (used for text) -->
-<div>
-  <div class="column col-md-6 col-lg-6">
-<h3> CSS Animation </h3> <!-- heading for the project 2 -->
+<h2> CSS Animation </h2> <!-- heading for the project 2 -->
 <p>
   <!-- open 1st paragraph -->
   This is an example of a SVG image which is animated using keyframes.
 </p><!-- end 1st paragraph -->
-</div>
-</div>
+</div><!-- end row-->
+</div><!-- end container-->
         </main>
       <footer id="contact" onclick="menuToggle()">
   <div class="container">
@@ -1064,7 +1055,7 @@
         <div>
         <!--Social Media Layout and Placeholders-->
         <a href="LINKEDIN-URL" target="_blank">
-          <img class="icon" src="img/linkedin_logo.svg">
+          <img class="icon" src="img/linkedin_logo.svg" alt="Linkedin Logo">
         </a>
         <a href="TWITTER-URL" target="_blank">
           <svg class="icon" enable-background="new 0 0 48 48" id="Layer_1" version="1.1" viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1079,10 +1070,10 @@
           </svg>
         </a>
         <a href="FACEBOOK-URL" target="_blank">
-          <img class="icon" src="img/facebook_logo.svg">
+          <img class="icon" src="img/facebook_logo.svg" alt="Facebook Logo">
         </a>
         <a href="INSTAGRAM-URL" target="_blank">
-          <img class="icon" src="img/instagram_logo.svg">
+          <img class="icon" src="img/instagram_logo.svg" alt="Instagram Logo">
         </a>
       </div>
       <p>Copyright Christine Chang 2021</p>
