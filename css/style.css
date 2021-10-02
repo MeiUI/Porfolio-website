@@ -8,9 +8,9 @@ header {
   padding: 10px 0 4px;
   margin: 0;
   border-bottom: 3px solid #4a4a4a;
-  -webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
   position: fixed;
   display: inline-block;
   width: 100%;
@@ -21,7 +21,7 @@ header {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -29,7 +29,10 @@ body {
   color: #4a4a4a;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -106,8 +109,8 @@ a:focus {
 
 .button {
   display: inline-block;  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #3A3A3A;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #3a3a3a;
+  color: #fff; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -130,12 +133,12 @@ a:focus {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
-  border: 2px solid #3A3A3A;
+  border: 2px solid #3a3a3a;
 }
 
 .button.contact:hover {
-  background-color: #3A3A3A;
-  color: #ffffff;
+  background-color: #3a3a3a;
+  color: #fff;
 }
 
 .button.contact:active {
@@ -149,8 +152,7 @@ a:focus {
 }
 
 .row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;   /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
@@ -159,17 +161,16 @@ a:focus {
 }
 
 #hero h1 {
-  text-align: center;
-  /* Centers text */
+  text-align: center;   /* Centers text */
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -180,7 +181,8 @@ nav>ul>li>a {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -240,11 +242,11 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -262,7 +264,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px
+    padding: 10px;
   }
 
   .row::after {
@@ -290,7 +292,7 @@ Large devices (1024px or larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px
+    padding: 10px;
   }
 
   .container {
@@ -303,9 +305,9 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px)
 
-@keyframes color-change {
+  @keyframes color-change {
   0% {
     fill: #edc655;
   }
